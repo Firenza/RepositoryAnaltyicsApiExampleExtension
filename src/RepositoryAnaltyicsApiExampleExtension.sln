@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryAnaltyicsApiExampleExtension", "RepositoryAnaltyicsApiExampleExtension\RepositoryAnaltyicsApiExampleExtension.csproj", "{F8BF06F3-7C90-42F9-9C03-38648F17E3DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8BF06F3-7C90-42F9-9C03-38648F17E3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BF06F3-7C90-42F9-9C03-38648F17E3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BF06F3-7C90-42F9-9C03-38648F17E3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BF06F3-7C90-42F9-9C03-38648F17E3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F60E747A-4C5C-49DF-8CD1-E3E5ED6ABA63}
+	EndGlobalSection
+EndGlobal
