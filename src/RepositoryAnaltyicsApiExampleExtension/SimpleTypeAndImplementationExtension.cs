@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 namespace RepositoryAnaltyicsApiExampleExtension
 {
     [Export(typeof(IDeriveRepositoryTypeAndImplementations))]
-    public class SimpleTypeAndImplementationExtension : IDeriveRepositoryTypeAndImplementations
+    public class SimpleTypeAndImplementationExtension : IDeriveRepositoryTypeAndImplementations, IRequireDependenciesAccess, IRequireFileListAccess, IRequireTopicsAccess
     {
-        public Task<RepositoryTypeAndImplementations> DeriveImplementationAsync(IEnumerable<RepositoryDependency> dependencies, Func<Task<List<RepositoryFile>>> readFilesAsync, IEnumerable<string> topics, string name, Func<string, Task<string>> readFileContentAsync)
+        public IEnumerable<RepositoryDependency> Dependencies { get; set; }
+        public Func<Task<List<RepositoryFile>>> ReadFileListAsync { get; set; }
+        public IEnumerable<string> TopicNames { get; set; }
+
+        public Task<RepositoryTypeAndImplementations> DeriveImplementationAsync(string repositoryName)
         {
             Console.WriteLine("Hey I'm a simple Type and Implementation extension!");
 
